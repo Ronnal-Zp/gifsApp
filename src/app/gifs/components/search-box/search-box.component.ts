@@ -17,6 +17,7 @@ export class SearchBoxComponent {
 
   searchTag() {
     const tag = this.searchInput.nativeElement.value;
+
     this.gifsService.searchTag(tag)
     this.searchInput.nativeElement.value = '';
   }
