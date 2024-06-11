@@ -1,0 +1,7 @@
+  <img  [src]="url"
+        [alt]="title || 'No title'"
+        (load)="load()"
+        [ngStyle]="{'display': hasLoaded ? '' : 'd-none'}"
+        class="card-img-top animate__animated animate__fadeIn">
+
+  <img *ngIf="!hasLoaded" width="35px" height="35px" class="mt-3 card-img-top" src="assets/loader.svg" alt="loader">
